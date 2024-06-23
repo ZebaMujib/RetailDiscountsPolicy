@@ -10,7 +10,7 @@ public class PromotionDiscountService extends ItemService{
     private final double priceFactor;
     private Item item;
     public PromotionDiscountService(Item item, int percentPromotion) {
-        super(item.getName(), item.getUnitPrice(), item.getItemType());
+    super(item.getName(), item.getUnitPrice(), item.getItemType(), item.getQuantity());
 
         if (percentPromotion >= 0 && percentPromotion <= 100) {
             this.priceFactor = (double)(100 - percentPromotion) / 100.0;

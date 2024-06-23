@@ -1,5 +1,8 @@
 package com.example.retaildiscountspolicy.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class NormalDiscountService {
 
     public double applyDiscount(double totalAmount) {

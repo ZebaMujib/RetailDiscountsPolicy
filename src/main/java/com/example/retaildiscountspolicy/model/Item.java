@@ -9,12 +9,14 @@ public class Item {
     private final String name;
     private final double unitPrice;
     private final ItemEnum itemType;
+    private final Integer quantity;
 
 
-    public Item(String name, double unitPrice, ItemEnum itemType){
+    public Item(String name, double unitPrice, ItemEnum itemType, Integer quantity){
         this.name = name;
         this.unitPrice = unitPrice;
         this.itemType = itemType;
+        this.quantity=quantity;
     }
 
 }

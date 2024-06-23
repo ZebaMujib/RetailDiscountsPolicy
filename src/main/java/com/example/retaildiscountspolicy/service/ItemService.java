@@ -5,11 +5,11 @@ import com.example.retaildiscountspolicy.model.Item;
 
 public class ItemService extends Item {
 
-    public ItemService(String name, double unitPrice, ItemEnum itemType) {
-        super(name, unitPrice, itemType);
+    public ItemService(String name, double unitPrice, ItemEnum itemType, Integer quantity) {
+        super(name, unitPrice, itemType, quantity);
     }
 
-    double totalPriceForQuantity(int quantity) {
+    public double totalPriceForQuantity(int quantity) {
         return getUnitPrice() * (double) quantity;
     }
 }
