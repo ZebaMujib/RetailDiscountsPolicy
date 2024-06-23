@@ -19,17 +19,17 @@ import java.util.Map;
 public class FinalCartService {
 
 
-    private Map<ItemService, Integer> quantities = new LinkedHashMap();
+    private Map<ItemService, Integer> quantities = new LinkedHashMap<>();
 
     @Autowired
-    NormalDiscountService normalDiscountService;
-    Customer customer;
+    private NormalDiscountService normalDiscountService;
+    private Customer customer;
 
     public FinalCartService(){}
 
     public FinalCartService(Customer customer) {
         this.customer = customer;
-        quantities = new LinkedHashMap<ItemService, Integer>();
+        quantities = new LinkedHashMap<>();
     }
 
     public FinalCartService(Customer customer, NormalDiscountService normalDiscountService) {

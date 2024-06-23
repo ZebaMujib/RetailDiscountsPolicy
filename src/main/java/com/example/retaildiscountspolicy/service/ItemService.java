@@ -10,6 +10,6 @@ public class ItemService extends Item {
     }
 
     public double totalPriceForQuantity(int quantity) {
-        return getUnitPrice() * (double) quantity;
+        return getUnitPrice() * quantity;
     }
 }

@@ -17,7 +17,7 @@ import java.util.List;
 public class CartController {
 
     @Autowired
-    FinalCartService finalCartService;
+    private FinalCartService finalCartService;
 
     @PostMapping("/cart/{id}/total")
     public ResponseEntity<?> total(@PathVariable("id") long customerId,
